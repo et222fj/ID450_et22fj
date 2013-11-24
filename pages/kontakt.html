@@ -18,3 +18,34 @@
             <li><a href="kontakt.html">kontakt</a></li>
             
         </ul>
+        
+        
+        <form method="post">
+        <fieldset>
+        
+        <legend> Fråga </legend>
+            <select name="meddelande">
+                <option value="fråga" >fråga</option>
+                <option value="önskemål" >önskemål</option>
+                <option value="annat" >annat</option>
+              </select>
+            
+            <!-- vanlig textruta för rubrik börjar här -->
+             <p>Ärendetyp <input type="text" name="ärende" placeholder="Rubrik" size="20"/></p>   
+            
+            <!-- skriva sin text här -->
+            <p> Fråga<textarea name="texten" rows="5" cols=30>skriv ditt meddelande här!</textarea></p>
+            
+        </fieldset>
+            
+        <fieldset> 
+         <!--  val av kontaktsätt,-->
+        <legend> Information om mig</legend>
+            <p><input type="checkbox" name="kontaktval" value="kontakta mig via mail" /> kontakta mig via mail</p>
+            <p><input type="checkbox" name="kontaktval"  value="kontakta mig via telefon"/>kontakta mig via telefon   </p>
+         
+         </fieldset>    
+            <input type="submit" name="knapp" value="skicka"/>
+                 
+        </form>
+        
